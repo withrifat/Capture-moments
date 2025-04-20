@@ -49,3 +49,10 @@ body {
   block-size: contain;
   z-index: 100;
 }
+/* client say */
+.client-bg{
+  background-image: url(gradiyent\ 3.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  position: absolute;
+}
