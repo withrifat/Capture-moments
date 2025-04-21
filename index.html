@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/responsive.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
     <title>Document</title>
   </head>
   <body>
@@ -19,37 +15,51 @@
       <!------------------------------------ Hero section --------------------------------------->
       <nav class="navbar navbar-light navbar-expand-lg">
         <div class="container d-flex align-items-center justify-content-between">
-          <img src="img/main logo.png" alt="this is website logo" />
-          <ul class="navbar-nav d-none d-md-flex align-items-lg-center gap-4 fs-10">
-            <li class="nav-item">
-              <a class="nav-link text-danger small" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link small" href="#">AboutUs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link small" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link small" href="#">Prices</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link small" href="#">ContactUs</a>
-            </li>
-            <button class="custom-button" type="button"> Get Started </button>
-          </ul>
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="img/main logo.png" alt="this is website logo" />
+          </a>
+          <!-- Toggler (hamburger icon) -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collapsible menu -->
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-4 fs-10">
+              <li class="nav-item">
+                <a class="nav-link text-danger small" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link small" href="#">AboutUs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link small" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link small" href="#">Prices</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link small" href="#">ContactUs</a>
+              </li>
+              <li class="nav-item">
+                <button class="custom-button" type="button">Get Started</button>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <!---------------------------------- Hero section --------------------------------------------->
       <div class="container mx-auto">
-        <div class="row gap-5 gap-md-0 py-5 ">
-          <div class="col-12 col-md-6 py-5 my-5 hero_text">
-            <h1 class=" fw-bold mb-3 hero-text " style="font-family: 'Nexa', sans-serif"> CAPTURING MOMENTS <span class=""
-                style="color: #8a47f6">IN</span> <br> TIME </h1>
-            <p class="fs-5 mb-3  text-secondary"> A Glimpse into the Past, a Snapshot of the Present. </p>
-            <button class="custom-button mt-5" type="submit"> Register Interest </button>
+        <div class="row align-items-center gy-5 py-5">
+          <!-- Text Section -->
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <h1 class="fw-bold mb-3 hero-text" style="font-family: 'Nexa', sans-serif"> CAPTURING MOMENTS <span
+                style="color: #8a47f6">IN</span><br>TIME </h1>
+            <p class="fs-5 mb-3 text-secondary">A Glimpse into the Past, a Snapshot of the Present.</p>
+            <button class="custom-button mt-4" type="submit">Register Interest</button>
           </div>
-          <!-- image slider -->
+          <!-- Image Slider Section -->
           <div class="col-12 col-md-6">
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
               <div class="carousel-inner">
@@ -74,77 +84,79 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            <img class="d-flex m-auto mt-2" src="img/slide icon.png" alt="">
+            <!-- Optional: Slider Icon -->
+            <img class="d-block mx-auto mt-3" src="img/slide icon.png" alt="">
           </div>
         </div>
       </div>
     </div>
     <!------------------------------ this is for about us section ------------------------------------->
-    <div class="" style="width: 100%; background-color: #f3edfe">
-      <div class="container mx-auto">
-        <div class="row gap-5 gap-md-0 py-5" style="background-color: #f3edfe">
-          <div class="col-12 gap-4 col-md-6">
-            <img src="img/about us demo.png" alt="" class="w-100 h-100 object-fit-cover" />
+    <div style="width: 100%; background-color: #f3edfe">
+      <div class="container py-5">
+        <div class="row gy-5 align-items-center">
+          <!-- Image Column -->
+          <div class="col-12 col-md-6">
+            <img src="img/about us demo.png" alt="" class="img-fluid object-fit-cover w-100 h-100" />
           </div>
-          <div class="col-12 col-md-6 py-5 my-5">
-            <div class="container d-flex align-items-center gap-2 my-2">
-              <img src="img/Line 1.png" alt="Line symbol" style="height: 1px; width: 40px; " />
+          <!-- Text Column -->
+          <div class="col-12 col-md-6 text-center text-md-start py-md-5">
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-3">
+              <img src="img/Line 1.png" alt="Line symbol" style="height: 1px; width: 40px;" />
               <p class="mb-0 text-muted fs-5">About Us</p>
             </div>
-            <h1 class="fw-bold mb-3 large-text h1_bg_img fw-bold" style="font-family: 'Nexa', sans-serif"> We Are Very<span
-                class="" style="color: #8a47f6">Skilled</span> in <span class="" style="color: #8a47f6">Photography</span>
+            <h1 class="fw-bold mb-3 large-text h1_bg_img" style="font-family: 'Nexa', sans-serif"> We Are Very <span
+                style="color: #8a47f6">Skilled</span> in <span style="color: #8a47f6">Photography</span>
             </h1>
-            <p class=""> Hi, I'm Angelique and photography is my passion! My father passed on the “photographer virus” to
-              me. From analogue to digital. I have taken a number of courses and workshops and, above all, practiced a lot!
-              My children are now used to modeling. Perhaps that is where the penchant for taking photos of children comes
-              from. The pure appearance and enthusiasm of children. It's always fun! </p>
+            <p> Hi, I'm Angelique and photography is my passion! My father passed on the “photographer virus” to me.
+              From analogue to digital. I have taken a number of courses and workshops and, above all, practiced a lot!
+              My children are now used to modeling. Perhaps that is where the penchant for taking photos of children
+              comes from. The pure appearance and enthusiasm of children. It's always fun! </p>
             <p> “Photography is the art of frozen time… the ability to store emotions and feelings within a frame.” </p>
-            <button class="custom-button" type="submit"> See Our Portfolio </button>
+            <button class="custom-button mt-4" type="submit">See Our Portfolio</button>
           </div>
         </div>
       </div>
     </div>
-      <!-------------------------- this section is for image gallary --------------------------->\
-    <!-- <div class="custome_gimg"></div> -->
-    <div class="gra-img">
-    <div class="container my-5">
-      <div class="heading text-center mb-4">
-        <h1 class="large-text">Our <span style="color: #8a47f6">Portfolio</span></h1>
-      </div>
-      <!-- Filter Buttons -->
-      <div class="btn-group d-flex justify-content-center flex-wrap gap-2 py-2 mb-4 shadow-sm" role="group"
-        aria-label="Portfolio filter">
-        <button type="button" class="btn" style="background-color: transparent; color: black; border: none;">All</button>
-        <button type="button" class="btn"
-          style="background-color: transparent; color: #8a47f6; text-decoration: underline; border: none;">Childrens</button>
-        <button type="button" class="btn"
-          style="background-color: transparent; color: black; border: none;">Portraits</button>
-        <button type="button" class="btn" style="background-color: transparent; color: black; border: none;">Family</button>
-        <button type="button" class="btn" style="background-color: transparent; color: black; border: none;">Other
-          Photography</button>
-      </div>
-      <!-- Gallery Images -->
-      <div class="row g-3">
-        <div class="col-12 col-sm-6 col-lg-4">
-          <img src="img/bb 1.png" class="img-fluid w-100 rounded shadow-sm" alt="Boat on Calm Water">
-          <img src="img/bb 6.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Wintry Mountain Landscape">
-          <img src="img/bb 8.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Wintry Mountain Landscape">
+    <!-------------------------- this section is for image gallary --------------------------->\ <div class="gra-img">
+      <div class="container my-5">
+        <div class="heading text-center mb-4">
+          <h1 class="large-text">Our <span style="color: #8a47f6">Portfolio</span></h1>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <img src="img/bb 2.png" class="img-fluid w-100 rounded shadow-sm" alt="Mountains in the Clouds">
-          <img src="img/bb 4.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Boat on Calm Water">
-          <img src="img/bb 7.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Boat on Calm Water">
-          <img src="img/bb 9.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Boat on Calm Water">
+        <!-- Filter Buttons -->
+        <div class="btn-group d-flex justify-content-center flex-wrap gap-2 py-2 mb-4 shadow-sm" role="group"
+          aria-label="Portfolio filter">
+          <button type="button" class="btn"
+            style="background-color: transparent; color: black; border: none;">All</button>
+          <button type="button" class="btn"
+            style="background-color: transparent; color: #8a47f6; text-decoration: underline; border: none;">Childrens</button>
+          <button type="button" class="btn"
+            style="background-color: transparent; color: black; border: none;">Portraits</button>
+          <button type="button" class="btn"
+            style="background-color: transparent; color: black; border: none;">Family</button>
+          <button type="button" class="btn" style="background-color: transparent; color: black; border: none;">Other
+            Photography</button>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <img src="img/bb 3.png" class="img-fluid w-100 rounded shadow-sm" alt="Waves at Sea">
-          <img src="img/bb 5.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Yosemite National Park">
-          <img src="img/bb 10.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Yosemite National Park">
+        <!-- Gallery Images -->
+        <div class="row g-3">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <img src="img/bb 1.png" class="img-fluid w-100 rounded shadow-sm" alt="Boat on Calm Water">
+            <img src="img/bb 6.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Wintry Mountain Landscape">
+            <img src="img/bb 8.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Wintry Mountain Landscape">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <img src="img/bb 2.png" class="img-fluid w-100 rounded shadow-sm" alt="Mountains in the Clouds">
+            <img src="img/bb 4.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Boat on Calm Water">
+            <img src="img/bb 7.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Boat on Calm Water">
+            <img src="img/bb 9.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Boat on Calm Water">
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <img src="img/bb 3.png" class="img-fluid w-100 rounded shadow-sm" alt="Waves at Sea">
+            <img src="img/bb 5.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Yosemite National Park">
+            <img src="img/bb 10.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Yosemite National Park">
+          </div>
         </div>
       </div>
     </div>
-    </div>
-
     <!----------------------------- Prices section---------------------------------->
     <div class="container">
       <h1 class="large-text fw-bold text-center py-5">Prices</h1>
@@ -154,7 +166,8 @@
           <div class="card h-100 shadow-sm rounded-4 border-0">
             <div class="card-body text-center text-dark bg-light rounded-4">
               <h5 class="card-hed card-title">Children's Photography/ Family/ Pregnancy/ Loveshoot</h5>
-              <p class="p-4">The price for this is €50.00 (incl. VAT) and takes approximately one hour. For that you get 10/15 edited digital files in large format.</p>
+              <p class="p-4">The price for this is €50.00 (incl. VAT) and takes approximately one hour. For that you get
+                10/15 edited digital files in large format.</p>
               <h2 class="card-text">€50.00</h2>
               <button type="button" class="custom-button">Get Purchase</button>
             </div>
@@ -165,9 +178,11 @@
           <div class="card h-100 bg-dark shadow-sm rounded-4 border-0">
             <div class="card-body text-center text-white rounded-4">
               <h5 class="card-hed card-title m-3">Lifestyle Photography</h5>
-              <p class="p-4 text-secondary">Lifestyle photography takes place at your home in a relaxed setting. The price for this depends on how long we take. Inquire about the possibilities.</p>
+              <p class="p-4 text-secondary">Lifestyle photography takes place at your home in a relaxed setting. The
+                price for this depends on how long we take. Inquire about the possibilities.</p>
               <h2 class="card-text">€50.00</h2>
-              <button type="button" class="custom-button" style="background-color: white; color: black;">Get Purchase</button>
+              <button type="button" class="custom-button" style="background-color: white; color: black;">Get
+                Purchase</button>
             </div>
           </div>
         </div>
@@ -185,126 +200,119 @@
       </div>
     </div>
     <!---------------------------------- what our client say -------------------------->
-    <div class="w-100 py-5" >
+    <div class="w-100 py-5">
       <div class="gra-img_solo" style="background-color: #f3edfe">
-      <div class="container mx-auto my-3">
-        <div class="row gap-5 gap-md-0 py-5">
-          <div class="col-12 col-md-6 py-5 my-5">
-            <div class="gap-2 d-flex align-items-center my-2">
-              <img src="img/Line 1.png" alt="Line symbol" style="height: 1px; width: 40px; " />
-              <p class="mb-0 text-muted fs-5">Testimonials</p>
-            </div>
-            
-            <h1 class="large-text fw-bold">What Our Clients Say</h1>
-            <p class="py-3"> This photography website is a true gem for anyone who appreciates artistry and storytelling through
-              the lens. The images are awe-inspiring, and the website provides an engaging and immersive experience. With a
-              few minor enhancements in user-friendliness and performance, it could become an even more exceptional platform
-              for showcasing photography talent. </p>
-            <div class="container d-flex gap-3">
-              <div class="d-flex rounded-pill w-50 gap-2" style="background-color: #e3d4fd; align-items: center">
-                <img src="img/clint mini.png" alt="" />
-                <h4>Amane Indahnya</h4>
+        <div class="container mx-auto my-3">
+          <div class="row gap-5 gap-md-0 py-5">
+            <div class="col-12 col-md-6 py-5 my-5">
+              <div class="gap-2 d-flex align-items-center my-2">
+                <img src="img/Line 1.png" alt="Line symbol" style="height: 1px; width: 40px; " />
+                <p class="mb-0 text-muted fs-5">Testimonials</p>
               </div>
-              <div class="d-flex gap-3">
-                <img src="img/arrow-left-circle.svg" alt="hi" class="img-fluid" style="width: 40px; height: 50px" />
-                <img src="img/arrow-right-circle.svg" alt="" class="img-fluid" style="width: 40px; height: 50px" />
+              <h1 class="large-text fw-bold">What Our Clients Say</h1>
+              <p class="py-3"> This photography website is a true gem for anyone who appreciates artistry and
+                storytelling through the lens. The images are awe-inspiring, and the website provides an engaging and
+                immersive experience. With a few minor enhancements in user-friendliness and performance, it could
+                become an even more exceptional platform for showcasing photography talent. </p>
+              <div class="container d-flex gap-3">
+                <div class="d-flex rounded-pill w-50 gap-2" style="background-color: #e3d4fd; align-items: center">
+                  <img src="img/clint mini.png" alt="" />
+                  <h4>Amane Indahnya</h4>
+                </div>
+                <div class="d-flex gap-3">
+                  <img src="img/arrow-left-circle.svg" alt="hi" class="img-fluid" style="width: 40px; height: 50px" />
+                  <img src="img/arrow-right-circle.svg" alt="" class="img-fluid" style="width: 40px; height: 50px" />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <img src="img/client big.png" alt="" class="w-100 h-100 object-fit-cover" />
+            <div class="col-12 col-md-6">
+              <img src="img/client big.png" alt="" class="w-100 h-100 object-fit-cover" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
     <!--------------------------- instagram feed --------------------------------------->
     <div class="gra-img">
-    <div class="container">
-      <div class="my-5">
-        <nav class="navbar navbar-light bg-white navbar-expand-lg">
-          <div class="container d-flex align-items-center justify-content-between">
-            <h1 class="large-text">Instagram Feed</h1>
-            <button type="button" class=" custom-button"> Joind Now </button>
+      <div class="container">
+        <div class="my-5">
+          <nav class="navbar navbar-light bg-white navbar-expand-lg">
+            <div class="container d-flex align-items-center justify-content-between">
+              <h1 class="large-text">Instagram Feed</h1>
+              <button type="button" class=" custom-button"> Joind Now </button>
+            </div>
+          </nav>
+        </div>
+        <!-- this is for image gallary -->
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+            <img src="img/in 1.png" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+            <img src="img/in 2.png" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
           </div>
-        </nav>
-      </div>
-      <!-- this is for image gallary -->
-      <div class="row">
-        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-          <img src="img/in 1.png" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-          <img src="img/in 2.png" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
-        </div>
-        <div class="col-lg-3 mb-4 mb-lg-0">
-          <img src="img/in 3.png" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
-          <img src="img/in 4.png" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-        </div>
-        <div class="col-lg-3 mb-4 mb-lg-0">
-          <img src="img/in 5.png" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
-          <img src="img/in 6.png" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <img src="img/in 3.png" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+            <img src="img/in 4.png" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+          </div>
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <img src="img/in 5.png" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+            <img src="img/in 6.png" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+          </div>
         </div>
       </div>
     </div>
-    </div>
-
-  <!----------------------------------------- have a qustion ------------------------------------------>
-  <div class="gra_foot">
-  <div class="container mx-auto">
-    <div class="row gap-5 gap-md-0 py-5">
-      <div class="col-12 col-md-6 py-5 my-5">
-        <h1 class="large-text">Have A Question?</h1>
-        <p class="py-2">
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <!-- this is form section -->
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Name</label>
-          <input class="form-control" type="text" />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Massage</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-        </div>
-      </div>
-      <!-- this is for get in touch -->
-      <div class="col-12 col-md-6 py-5 my-5 rounded-3 p-4" style="background-color: #ede3fe">
-        <div>
-          <h2>Get In Touch!</h2>
-          <p>
-            We love to hear from you.Our friendly Team is always here to chat.
-          </p>
-          <div>
-            <img src="img/location.png" alt="" />
-            <div>
-              <h3>location:</h3>
-              <p>199 Nueces ST,Austin,TX 78701</p>
+    <!----------------------------------------- have a qustion ------------------------------------------>
+    <div class="gra_foot">
+      <div class="container mx-auto">
+        <div class="row gap-5 gap-md-0 py-5">
+          <div class="col-12 col-md-6 py-5 my-5">
+            <h1 class="large-text">Have A Question?</h1>
+            <p class="py-2"> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <!-- this is form section -->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Name</label>
+              <input class="form-control" type="text" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Massage</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
             </div>
           </div>
-          <div>
-            <img src="img/call.png" alt="" />
+          <!-- this is for get in touch -->
+          <div class="col-12 col-md-6 py-5 my-5 rounded-3 p-4" style="background-color: #ede3fe">
             <div>
-              <h3>Phone:</h3>
-              <p>+1(456)666-4077</p>
-            </div>
-          </div>
-          <div>
-            <img src="img/email.png" alt="" />
-            <div>
-              <h3>Email:</h3>
-              <p>support@free.com</p>
+              <h2>Get In Touch!</h2>
+              <p> We love to hear from you.Our friendly Team is always here to chat. </p>
+              <div>
+                <img src="img/location.png" alt="" />
+                <div>
+                  <h3>location:</h3>
+                  <p>199 Nueces ST,Austin,TX 78701</p>
+                </div>
+              </div>
+              <div>
+                <img src="img/call.png" alt="" />
+                <div>
+                  <h3>Phone:</h3>
+                  <p>+1(456)666-4077</p>
+                </div>
+              </div>
+              <div>
+                <img src="img/email.png" alt="" />
+                <div>
+                  <h3>Email:</h3>
+                  <p>support@free.com</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  </div>
     <!-------------------------------------------- Footer part  ----------------------------------------->
     <div style="width: 100%; background-color: #222222">
       <div class="navbar navbar-light navbar-expand-lg py-3">
@@ -313,20 +321,16 @@
           <div class="d-flex gap-4 text-white fs-5.5">
             <a class="text-white text-decoration-underline" href="#">Privacy Policy</a>
             <a class="text-white text-decoration-underline" href="#">Terms & Conditions</a>
-          </div>          
+          </div>
           <div>
             <img src="img/social.png" alt="" />
           </div>
         </div>
       </div>
     </div>
-
-    
     <!-- bootstrap CDN -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
   </body>
 </html>
