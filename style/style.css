@@ -10,6 +10,8 @@
 body {
   font-family: "Quicksand", sans-serif;
   background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
 }
   .hero-text {
     font-weight: 900;
@@ -127,4 +129,37 @@ body {
   background-size: auto;
   display: flex;
   flex-direction: column;
+}
+ /*  hover effect  */
+ a{
+  transition: all 0.3s ease;
+}
+a:hover{
+  transform: translateY(-2px);
+}
+p{
+  transition: all 0.3s ease;
+}
+p:hover{
+  transform: translateY(-2px);
+}
+img{
+  transition: all 0.3s ease;
+}
+img:hover{
+  transform: translateY(-2px);
+}
+button{
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* text select */
+::selection{
+  background-color: #8A47F6;
+  color: #fff;
 }
