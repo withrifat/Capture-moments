@@ -10,25 +10,29 @@ body {
   font-family: "Quicksand", sans-serif;
   background-repeat: no-repeat;
 }
-
-.large-text {
+.hero-text {
     font-size: 5rem;
     font-weight: 900;
+    line-height: 1;
+  }
+.large-text {
+    font-size: 4rem;
+    font-weight: 700;
     line-height: 1;
   }
   .custom-button {
     background-color: #FE8C45;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1rem 3rem;
     border: none;
     border-radius: 30px;
-    font-size: 1rem;
-    transition: 0.3s;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
-
   .custom-button:hover {
     background-color: #d56b29;
+    transform: scale(1.05); 
   }
 /* hero bg */
 .hero_bg {
