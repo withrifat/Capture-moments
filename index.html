@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/responsive.css" />
+    <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
-    <title>Document</title>
+     	<!-- Add AOS -->
+	    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="img/cam fabi.png" type="image/x-icon">
+    <title>Capturing | Moment
+    </title>
   </head>
-  <body>
+  <body onload="myFunction()">
     <!-- Nav Bar -->
     <div class="hero_bg">
       <!------------------------------------ Hero section --------------------------------------->
@@ -50,19 +54,19 @@
         </div>
       </nav>
       <!---------------------------------- Hero section --------------------------------------------->
-      <div class="container mx-auto">
+      <div data-aos="fade-up" class="container mx-auto">
         <div class="row align-items-center gy-5 py-5">
           <!-- Text Section -->
           <div class="col-12 col-md-6 text-center text-md-start">
-            <h1 class="fw-bold mb-3 hero-text" style="font-family: 'Nexa', sans-serif"> CAPTURING MOMENTS <span
-                style="color: #8a47f6">IN</span><br>TIME </h1>
+            <h1 class="fw-bold mb-3 hero-text" style="font-family: 'Nexa', sans-serif"> CAPTURING MOMENTS <span class="hero-span"
+                style="color: #8a47f6 ">IN</span><br>TIME </h1>
             <p class="fs-5 mb-3 text-secondary">A Glimpse into the Past, a Snapshot of the Present.</p>
             <button class="custom-button mt-4" type="submit">Register Interest</button>
           </div>
           <!-- Image Slider Section -->
           <div class="col-12 col-md-6">
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
-              <div class="carousel-inner">
+              <div class="carousel-inner"> 
                 <div class="carousel-item active">
                   <img src="img/slide 1.png" class="d-block w-100" alt="...">
                 </div>
@@ -73,12 +77,12 @@
                   <img src="img/slide 3.png" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+              <button class="carousel-control-prev" style="box-shadow: none;" type="button" data-bs-target="#carouselExampleFade"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+              <button class="carousel-control-next" style="box-shadow: none;" type="button" data-bs-target="#carouselExampleFade"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -91,15 +95,15 @@
       </div>
     </div>
     <!------------------------------ this is for about us section ------------------------------------->
-    <div style="width: 100%; background-color: #f3edfe">
+    <div  style="width: 100%; background-color: #f3edfe">
       <div class="container py-5">
         <div class="row gy-5 align-items-center">
           <!-- Image Column -->
-          <div class="col-12 col-md-6">
+          <div data-aos="fade-down" class="col-12 col-md-6">
             <img src="img/about us demo.png" alt="" class="img-fluid object-fit-cover w-100 h-100" />
           </div>
           <!-- Text Column -->
-          <div class="col-12 col-md-6 text-center text-md-start py-md-5">
+          <div data-aos="fade-up" class="col-12 col-md-6 text-center text-md-start py-md-5">
             <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-3">
               <img src="img/Line 1.png" alt="Line symbol" style="height: 1px; width: 40px;" />
               <p class="mb-0 text-muted fs-5">About Us</p>
@@ -137,7 +141,7 @@
             Photography</button>
         </div>
         <!-- Gallery Images -->
-        <div class="row g-3">
+        <div data-aos="fade-up" class="row g-3">
           <div class="col-12 col-sm-6 col-lg-4">
             <img src="img/bb 1.png" class="img-fluid w-100 rounded shadow-sm" alt="Boat on Calm Water">
             <img src="img/bb 6.png" class="img-fluid w-100 rounded shadow-sm mt-3" alt="Wintry Mountain Landscape">
@@ -162,7 +166,7 @@
       <h1 class="large-text fw-bold text-center py-5">Prices</h1>
       <div class="row justify-content-center g-4">
         <!-- Card 1 -->
-        <div class="col-md-6 col-lg-4">
+        <div data-aos="fade-up" class="col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm rounded-4 border-0">
             <div class="card-body text-center text-dark bg-light rounded-4">
               <h5 class="card-hed card-title">Children's Photography/ Family/ Pregnancy/ Loveshoot</h5>
@@ -174,7 +178,7 @@
           </div>
         </div>
         <!-- Card 2 -->
-        <div class="col-md-6 col-lg-4">
+        <div data-aos="fade-down" class="col-md-6 col-lg-4">
           <div class="card h-100 bg-dark shadow-sm rounded-4 border-0">
             <div class="card-body text-center text-white rounded-4">
               <h5 class="card-hed card-title m-3">Lifestyle Photography</h5>
@@ -187,7 +191,7 @@
           </div>
         </div>
         <!-- Card 3 -->
-        <div class="col-md-6 col-lg-4">
+        <div data-aos="fade-up" class="col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm rounded-4 border-0">
             <div class="card-body text-center bg-light rounded-4">
               <h5 class="card-title card-hed">Portrait Photography</h5>
@@ -200,7 +204,7 @@
       </div>
     </div>
     <!---------------------------------- what our client say -------------------------->
-    <div class="w-100 py-5">
+    <div data-aos="fade-up" class="w-100 py-5">
       <div class="gra-img_solo" style="background-color: #f3edfe">
         <div class="container mx-auto my-3">
           <div class="row gap-5 gap-md-0 py-5">
@@ -233,7 +237,7 @@
       </div>
     </div>
     <!--------------------------- instagram feed --------------------------------------->
-    <div class="gra-img">
+    <div data-aos="fade-up" class="gra-img">
       <div class="container">
         <div class="my-5">
           <nav class="navbar navbar-light bg-white navbar-expand-lg">
@@ -261,10 +265,10 @@
       </div>
     </div>
     <!----------------------------------------- have a qustion ------------------------------------------>
-    <div class="gra_foot">
+    <div  class="gra_foot">
       <div class="container mx-auto">
         <div class="row gap-5 gap-md-0 py-5">
-          <div class="col-12 col-md-6 py-5 my-5">
+          <div data-aos="fade-up" class="col-12 col-md-6 py-5 my-5">
             <h1 class="large-text">Have A Question?</h1>
             <p class="py-2"> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -283,7 +287,7 @@
             </div>
           </div>
           <!-- this is for get in touch -->
-          <div class="col-12 col-md-6 py-5 my-5 rounded-3 p-4" style="background-color: #ede3fe">
+          <div data-aos="fade-down" class="col-12 col-md-6 py-5 my-5 rounded-3 p-4" style="background-color: #ede3fe">
             <div>
               <h2>Get In Touch!</h2>
               <p> We love to hear from you.Our friendly Team is always here to chat. </p>
@@ -314,7 +318,7 @@
       </div>
     </div>
     <!-------------------------------------------- Footer part  ----------------------------------------->
-    <div style="width: 100%; background-color: #222222">
+    <div  style="width: 100%; background-color: #222222">
       <div class="navbar navbar-light navbar-expand-lg py-3">
         <div class="container d-flex align-items-center justify-content-between">
           <img src="img/main logo.png" alt="" />
@@ -332,5 +336,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"></script>
+    	<!-- AOS JS -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <!-- =========== link aos script ===================== -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 200,
+          duration: 1000,
+        });
+      </script>  
   </body>
 </html>
